@@ -17,39 +17,82 @@
             min-height: 100vh;
             text-align: center;
         }
+
         header {
-            margin-top: 30px;
+            margin-top: 2rem;
             font-size: 2.5rem;
             color: #ff4d6d;
             font-weight: bold;
         }
+
         .quote {
-            margin: 20px 20px;
+            margin: 1.5rem 1.5rem;
             font-size: 1.5rem;
             color: #800000;
-            padding: 20px;
+            padding: 1.5rem;
             background: #fff0f5;
             border-radius: 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
+
         .gallery {
-            margin: 30px 20px;
+            margin: 2rem 1.5rem;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 15px;
             width: 100%;
             max-width: 800px;
         }
+
         .gallery img {
             width: 100%;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             object-fit: cover;
         }
+
         footer {
-            margin: 40px 0 20px;
-            font-size: 1rem;
+            margin: 3rem 0 1rem;
+            font-size: 1.5rem; /* Increased font size */
             color: #555;
+            font-weight: bold; /* Optionally bold the text */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header {
+                font-size: 2rem; /* Slightly smaller text on smaller screens */
+            }
+
+            .quote {
+                font-size: 1.2rem; /* Smaller quote text */
+            }
+
+            .gallery {
+                margin: 1.5rem 1rem;
+            }
+
+            footer {
+                font-size: 1.3rem; /* Slightly smaller footer text */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 1.8rem; /* Further reduce header size for very small screens */
+            }
+
+            .quote {
+                font-size: 1rem; /* Make quote text smaller on small screens */
+            }
+
+            .gallery {
+                margin: 1rem 0.5rem;
+            }
+
+            footer {
+                font-size: 1.2rem; /* Slightly smaller footer text for small screens */
+            }
         }
     </style>
 </head>
@@ -69,7 +112,7 @@
     </div>
 
     <footer>
-        Forever yours 💕
+        With you, forever and always 💘
     </footer>
 
 </body>
